@@ -15,9 +15,9 @@ class Song
     @@count += 1
     @@artists << @artist
     @@genres << @genre
+  end
 
-    #Add artist and genre to their respective class variable arrays.
-    #self.add_to_artists_array
-    #self.add_to_genre_array
+  def self.count
+    @@count
   end
 end
