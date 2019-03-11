@@ -3,19 +3,6 @@ class Song
   @@artists = []
   @@genres = []
 
-  def initialize(song_name, artist, genre)
-    #initialize instance Variables
-    @song_name = song_name
-    @artist = artist
-    @genre = genre
-
-    @@song_count += 1
-
-    #Add artist and genre to their respective class variable arrays.
-    @@add_to_artists_array
-    @@add_to_genre_array
-  end
-
   #Add_to_artists_array iterates through an array of hashes where each artists
   #is represented by a hash of {artist_name, artist_song_count}.  If a hash
   #with a key of artist_name is found, the artist_song_count is incremented.
@@ -54,5 +41,18 @@ class Song
     if !found
       @@genres[@genre] = {@genre => 1}
     end
+  end
+  
+  def initialize(song_name, artist, genre)
+    #initialize instance Variables
+    @song_name = song_name
+    @artist = artist
+    @genre = genre
+
+    @@song_count += 1
+
+    #Add artist and genre to their respective class variable arrays.
+    @@add_to_artists_array
+    @@add_to_genre_array
   end
 end
