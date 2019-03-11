@@ -3,6 +3,7 @@ class Song
   @@artists = []
   @@genres = []
 
+  attr_accessor :name, :artist, :genres
   #Add_to_artists_array iterates through an array of hashes where each artists
   #is represented by a hash of {artist_name, artist_song_count}.  If a hash
   #with a key of artist_name is found, the artist_song_count is incremented.
@@ -45,7 +46,7 @@ class Song
 
   def initialize(song_name, artist, genre)
     #initialize instance Variables
-    @song_name = song_name
+    @name = song_name
     @artist = artist
     @genre = genre
 
