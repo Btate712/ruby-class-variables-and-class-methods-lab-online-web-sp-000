@@ -8,7 +8,7 @@ class Song
   #with a key of artist_name is found, the artist_song_count is incremented.
   #If the artist is not already represented in the array, the arist is added
   #with a song count of 1.
-  def self.add_to_artists_array   #Class method
+  def add_to_artists_array   #Class method
     found = false
     @@artists.each do |artist_hash|
       artist_hash.each do |artist_name, artist_song_count|
@@ -28,7 +28,7 @@ class Song
   #with a key of genre_name is found, the genre_song_count is incremented.
   #If the genre is not already represented in the array, the genre is added
   #with a song count of 1.
-  def self.add_to_genre_array  #class method
+  def add_to_genre_array  #class method
     found = false
     @@genres.each do |genre_hash|
       genre_hash.each do |genre_name, genre_song_count|
