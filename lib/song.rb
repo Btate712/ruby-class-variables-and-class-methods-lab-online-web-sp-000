@@ -12,8 +12,8 @@ class Song
     @@song_count += 1
 
     #Add artist and genre to their respective class variable arrays.
-    add_to_artists_array
-    add_to_genre_array
+    @@add_to_artists_array
+    @@add_to_genre_array
   end
 
   #Add_to_artists_array iterates through an array of hashes where each artists
