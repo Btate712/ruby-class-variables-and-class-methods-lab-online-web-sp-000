@@ -9,11 +9,9 @@ class Song
     @artist = artist
     @genre = genre
 
-    song_count += 1
+    @@song_count += 1
 
     #Add artist and genre to their respective class variable arrays.
-    #Class variable arrays contain hashes with artist/genre as key and number
-    #of each as value.
     add_to_artists_array
     add_to_genre_array
   end
