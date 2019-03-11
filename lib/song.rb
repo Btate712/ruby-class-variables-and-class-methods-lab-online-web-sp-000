@@ -42,4 +42,18 @@ class Song
     end
     return_hash
   end
+
+  # class method artist_count returns a hash of artists and the number of songs
+  # have those artists
+  def self.artist_count
+    return_hash = {}
+    @@artists.each do |artist|
+      if !return_hash.include?(artist)
+        return_hash[artist] = 1
+      else
+        return_hash[artist] += 1
+      end
+    end
+    return_hash
+  end
 end
