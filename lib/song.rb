@@ -28,4 +28,17 @@ class Song
   def self.genres
     @@genres.uniq
   end
+
+  # class method genre_count returns a hash of genres and the number of songs 
+  # have those genres
+  def self.genre_count  
+    return_hash = {}
+    @@genres.each do |genre|
+      if !return_hash.include?(genre)
+        return_hash[genre] = 1
+      else
+        return_hash[genre] += 1
+      end
+    end
+  end
 end
