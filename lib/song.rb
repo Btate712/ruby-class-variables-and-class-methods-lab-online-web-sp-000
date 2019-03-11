@@ -1,9 +1,10 @@
 class Song
-  @@song_count = 0
+  @@count = 0
   @@artists = []
   @@genres = []
 
   attr_accessor :name, :artist, :genre
+  
   #Add_to_artists_array iterates through an array of hashes where each artists
   #is represented by a hash of {artist_name, artist_song_count}.  If a hash
   #with a key of artist_name is found, the artist_song_count is incremented.
@@ -50,7 +51,7 @@ class Song
     @artist = artist
     @genre = genre
 
-    @@song_count += 1
+    @@count += 1
 
     #Add artist and genre to their respective class variable arrays.
     #self.add_to_artists_array
