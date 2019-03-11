@@ -42,7 +42,7 @@ class Song
       @@genres[@genre] = {@genre => 1}
     end
   end
-  
+
   def initialize(song_name, artist, genre)
     #initialize instance Variables
     @song_name = song_name
