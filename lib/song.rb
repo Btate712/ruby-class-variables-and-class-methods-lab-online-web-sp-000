@@ -52,7 +52,7 @@ class Song
     @@song_count += 1
 
     #Add artist and genre to their respective class variable arrays.
-    self.add_to_artists_array
-    self.add_to_genre_array
+    #self.add_to_artists_array
+    #self.add_to_genre_array
   end
 end
